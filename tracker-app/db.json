@@ -1,0 +1,46 @@
+{
+  "applications": [
+    {
+      "id": "1",
+      "companyName": "Athena",
+      "position": "Frontend Developer",
+      "dateApplied": "2024-08-01",
+      "status": "Applied"
+    },
+    {
+      "id": "2",
+      "companyName": "5C",
+      "position": "Backend Developer",
+      "dateApplied": "2024-07-25",
+      "status": "Interview Scheduled"
+    },
+    {
+      "id": "3",
+      "companyName": "Moringa School",
+      "position": "UI/UX Designer",
+      "dateApplied": "2024-08-05",
+      "status": "Offered"
+    },
+    {
+      "id": "4",
+      "companyName": "Kenya Power",
+      "position": "DevOps Engineer",
+      "dateApplied": "2024-07-28",
+      "status": "Rejected"
+    },
+    {
+      "id": "5",
+      "companyName": "Safaricom PLC",
+      "position": "Full Stack Developer",
+      "dateApplied": "2024-08-10",
+      "status": "Offer Received"
+    },
+    {
+      "id": "1f41",
+      "companyName": "Airtel Kenya",
+      "position": "Cook",
+      "dateApplied": "2024-03-12",
+      "status": "Interview Scheduled"
+    }
+  ]
+}
