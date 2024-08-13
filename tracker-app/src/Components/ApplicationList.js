@@ -3,7 +3,7 @@ import ApplicationItem from './ApplicationItem';
 
 const ApplicationList = ({ applications, onDelete, onEdit }) => {
   return (
-    <div>
+    <div className="flex-container"> {/* Updated to flex-container */}
       {applications.map(application => (
         <ApplicationItem
           key={application.id}

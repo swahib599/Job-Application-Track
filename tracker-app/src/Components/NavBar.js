@@ -1,9 +1,14 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 
 const NavBar = () => {
   return (
     <nav>
-      <h1>Job Application Tracker</h1>
+      <ul>
+        <li><NavLink to="/">Home</NavLink></li>
+        <li><NavLink to="/about">About</NavLink></li>
+        <li><NavLink to="/login">Login</NavLink></li>
+      </ul>
     </nav>
   );
 };

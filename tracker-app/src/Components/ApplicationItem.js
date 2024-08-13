@@ -18,7 +18,7 @@ const ApplicationItem = ({ application, onDelete, onEdit }) => {
 
   if (isEditing) {
     return (
-      <div>
+      <div className="flex-item"> {/* Ensure flex-item class is applied */}
         <input
           type="text"
           name="companyName"
@@ -54,7 +54,7 @@ const ApplicationItem = ({ application, onDelete, onEdit }) => {
   }
 
   return (
-    <div>
+    <div className="flex-item"> {/* Ensure flex-item class is applied */}
       <h3>{application.position} at {application.companyName}</h3>
       <p>Date Applied: {application.dateApplied}</p>
       <p>Status: {application.status}</p>
