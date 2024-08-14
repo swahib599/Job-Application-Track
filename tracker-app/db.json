@@ -2,45 +2,51 @@
   "applications": [
     {
       "id": "1",
-      "companyName": "Athena",
-      "position": "Frontend Developers",
+      "companyName": "Tala",
+      "position": "Senior Backend Engineer",
       "dateApplied": "2024-08-01",
-      "status": "Applied"
+      "status": "Applied",
+      "jobUrl": "https://codingkenya.com/job/senior-backend-engineer-5/"
     },
     {
       "id": "2",
-      "companyName": "5C",
+      "companyName": "Irri-Hub",
       "position": "Backend Developer",
       "dateApplied": "2024-07-25",
-      "status": "Interview Scheduled"
+      "status": "Interview Scheduled",
+      "jobUrl": "https://www.myjobmag.co.ke/job/junior-backend-developer-irri-hub-ke"
     },
     {
       "id": "3",
       "companyName": "Moringa School",
-      "position": "UI/UX Designer",
+      "position": "Junior Curriculum Engineer",
       "dateApplied": "2024-08-05",
-      "status": "Offered"
+      "status": "Offered",
+      "jobUrl": "https://my.moringaschool.com/jobs/detail/junior-curriculum-engineer-data-science-118"
     },
     {
       "id": "4",
-      "companyName": "Kenya Power",
-      "position": "DevOps Engineer",
+      "companyName": "Sagan",
+      "position": "Junior Accountant",
       "dateApplied": "2024-07-28",
-      "status": "Rejected"
+      "status": "Rejected",
+      "jobUrl": "https://www.careers-page.com/sagan/job/LRX69566"
     },
     {
       "id": "5",
-      "companyName": "Safaricom PLC",
+      "companyName": "Crossover",
       "position": "Full Stack Developer",
       "dateApplied": "2024-08-10",
-      "status": "Offer Received"
+      "status": "Offer Received",
+      "jobUrl": "https://www.crossover.com/job-roles/software-engineering/kenya/city/nairobi/c-a0q2j000007SQpFAAW/learnwithai-full-stack-developer"
     },
     {
       "id": "370b",
-      "companyName": "Airtel Kenya",
-      "position": "Cook",
+      "companyName": "My Health Africa",
+      "position": "Senior UI/UX Designer",
       "dateApplied": "2024-02-22",
-      "status": "Interview Scheduled"
+      "status": "Interview Scheduled",
+      "jobUrl": "https://freshjobs.co.ke/job/senior-ui-ux-designer-at-myhealth-africa-nairobi/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
     }
   ]
 }

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 
-function ApplicationForm ({ onApplicationAdded }) {
+function ApplicationForm({ onApplicationAdded }) {
   const [formData, setFormData] = useState({
     companyName: '',
     position: '',
     dateApplied: '',
-    status: 'Applied'
+    status: 'Applied',
+    jobUrl: '', // Add jobUrl to the form data
   });
 
   const handleChange = (e) => {
@@ -28,15 +29,14 @@ function ApplicationForm ({ onApplicationAdded }) {
       .then(response => response.json())
       .then(data => {
         onApplicationAdded(data);
-        setFormData({ companyName: '', position: '', dateApplied: '', status: 'Applied' });
+        setFormData({ companyName: '', position: '', dateApplied: '', status: 'Applied', jobUrl: '' });
       })
       .catch(error => console.error('Error:', error));
   };
 
   return (
-    
     <form onSubmit={handleSubmit} className='form'>
-      <h2>Job applied</h2>
+      <h2>Add Job Application</h2>
       <label htmlFor="companyName">Company Name:</label>
       <input
         type="text"
@@ -79,9 +79,19 @@ function ApplicationForm ({ onApplicationAdded }) {
         <option value="Offered">Offered</option>
         <option value="Rejected">Rejected</option>
       </select>
+      <label htmlFor="jobUrl">Job URL:</label>
+      <input
+        type="url"
+        id="jobUrl"
+        name="jobUrl"
+        placeholder="Job URL"
+        value={formData.jobUrl}
+        onChange={handleChange}
+        className='form-input'
+      />
       <button type="submit" className='form-button'>Add Application</button>
     </form>
   );
-};
+}
 
 export default ApplicationForm;

@@ -10,7 +10,7 @@ body {
   background-color: #f4f4f4; 
   color: #333; 
   box-sizing: border-box; 
-  background-image: url('https://img.freepik.com/free-photo/online-school-equipment-home_23-2149041150.jpg?t=st=1723669089~exp=1723672689~hmac=e6647548aaa3e600e7726bf363d4e0fc756ff6667ffe668643c2dc6c4bacb6c3&w=996');
+  background-image: url('https://img.freepik.com/free-photo/online-school-equipment-home_23-2149041150.jpg?ga=GA1.1.736327954.1723654538&semt=ais_hybrid');
 }
 
 
@@ -266,4 +266,12 @@ p {
 
 .signin-button {
   margin-top: 10px;
+}
+.application-details a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.application-details a:hover {
+  text-decoration: underline;
 }

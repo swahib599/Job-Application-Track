@@ -12,13 +12,13 @@ function Login({ onLogin }) {
     const success = onLogin(email, password);
     if (success) {
       localStorage.setItem('isAuthenticated', 'true');
-      // Clear the form fields after successful login
+     
       setEmail('');
       setPassword('');
       navigate('/');
     } else {
       setError("Invalid email or password.");
-      // Clear the password field on unsuccessful login
+      
       setPassword('');
     }
   };

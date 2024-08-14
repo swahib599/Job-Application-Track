@@ -1,14 +1,14 @@
 import React from 'react';
-import { createBrowserRouter, RouterProvider,  Navigate } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider, Navigate } from 'react-router-dom';
 import App from './App';
 import About from './Pages/About';
 import Login from './Pages/Login';
 import NavBar from './Components/NavBar';
 
-// Dummy authentication function
+// authentication function
 const onLogin = (email, password) => {
-  const validEmail = "user@example.com";
-  const validPassword = "password";
+  const validEmail = "group4@moringa.com";
+  const validPassword = "1234";
 
   if (email === validEmail && password === validPassword) {
     sessionStorage.setItem('isAuthenticated', 'true');
@@ -17,15 +17,15 @@ const onLogin = (email, password) => {
   return false;
 };
 
-// Check authentication status
+// authentication status
 const isAuthenticated = () => sessionStorage.getItem('isAuthenticated') === 'true';
 
-// Protected Route Wrapper
+// Protected Route 
 const ProtectedRoute = ({ children }) => {
   return isAuthenticated() ? children : <Navigate to="/login" />;
 };
 
-// Define routes
+//  routes
 const router = createBrowserRouter([
   {
     path: "/",
