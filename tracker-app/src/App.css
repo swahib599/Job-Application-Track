@@ -10,6 +10,7 @@ body {
   background-color: #f4f4f4; 
   color: #333; 
   box-sizing: border-box; 
+  background-image: url('https://img.freepik.com/free-photo/online-school-equipment-home_23-2149041150.jpg?t=st=1723669089~exp=1723672689~hmac=e6647548aaa3e600e7726bf363d4e0fc756ff6667ffe668643c2dc6c4bacb6c3&w=996');
 }
 
 
@@ -90,12 +91,14 @@ nav ul li a.active {
   display: flex;
   align-items: center;
   margin: 20px 0;
+  /* color: fff; */
 }
 
 .filter label {
   margin-right: 10px;
   font-weight: bold;
-  color: #333;
+  /* color: #333; */
+  color: burlywood;
 }
 
 .filter select {
@@ -123,7 +126,12 @@ nav ul li a.active {
 .form {
   padding: 1em;
 }
-
+.form label {
+color: burlywood;
+}
+.form h2 {
+  color: burlywood;
+}
 .form-input {
   padding: 10px;
   margin: 10px 0;
@@ -181,6 +189,7 @@ nav ul li a.active {
 /* Application Items */
 .flex-item {
   background-color: rgba(235, 229, 229, 0.8); 
+  /* background-color: antiquewhite; */
   padding: 16px; 
   border-radius: 8px; 
   border: 1px solid rgba(0, 0, 0, 0.1); 
@@ -232,3 +241,29 @@ p {
   }
 }
 
+
+.signin-container {
+  background-image: url('https://img.freepik.com/free-photo/coins-job-word_23-2148568014.jpg?size=626&ext=jpg&ga=GA1.1.736327954.1723654538&semt=ais_hybrid');
+  background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat; 
+  height: 100vh; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signin-form {
+  background: rgba(255, 255, 255, 0.8); 
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.signin-input {
+  margin-bottom: 15px;
+}
+
+.signin-button {
+  margin-top: 10px;
+}

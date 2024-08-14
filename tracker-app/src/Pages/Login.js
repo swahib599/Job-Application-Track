@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-function Login({ onLogin, onLogout }) {
+function Login({ onLogin }) {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState(null);
@@ -11,9 +11,15 @@ function Login({ onLogin, onLogout }) {
     e.preventDefault();
     const success = onLogin(email, password);
     if (success) {
+      localStorage.setItem('isAuthenticated', 'true');
+      // Clear the form fields after successful login
+      setEmail('');
+      setPassword('');
       navigate('/');
     } else {
       setError("Invalid email or password.");
+      // Clear the password field on unsuccessful login
+      setPassword('');
     }
   };
 
@@ -27,6 +33,7 @@ function Login({ onLogin, onLogout }) {
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           className="signin-input"
+          autoComplete="off"
         />
         <input
           type="password"
@@ -34,12 +41,13 @@ function Login({ onLogin, onLogout }) {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           className="signin-input"
+          autoComplete="new-password" // Prevents browser from autofilling
         />
         {error && <p className="error-message">{error}</p>}
         <button type="submit" className="signin-button">Sign In</button>
       </form>
     </div>
   );
-};
+}
 
 export default Login;

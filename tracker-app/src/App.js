@@ -13,12 +13,18 @@ const App = () => {
   useEffect(() => {
     fetch('http://localhost:8001/applications')
       .then(response => response.json())
-      .then(data => setApplications(data));
+      .then(data => {
+        const sortedApplications = data.sort((a, b) => new Date(b.dateApplied) - new Date(a.dateApplied));
+        setApplications(sortedApplications);
+      });
   }, []);
 
   // Add new application
   const addApplication = (newApplication) => {
-    setApplications([...applications, newApplication]);
+    setApplications(prevApplications => {
+      const updatedApplications = [newApplication, ...prevApplications];
+      return updatedApplications.sort((a, b) => new Date(b.dateApplied) - new Date(a.dateApplied));
+    });
   };
 
   // Update an existing application
