@@ -1,9 +1,9 @@
 import React from 'react';
 import ApplicationItem from './ApplicationItem';
 
-const ApplicationList = ({ applications, onDelete, onEdit }) => {
+function ApplicationList ({ applications, onDelete, onEdit }) {
   return (
-    <div className="flex-container"> {/* Updated to flex-container */}
+    <div className="flex-container"> 
       {applications.map(application => (
         <ApplicationItem
           key={application.id}

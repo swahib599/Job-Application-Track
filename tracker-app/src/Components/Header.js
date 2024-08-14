@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Header = () => {
+function Header() {
   return (
     <header>
       <h2>Your Job Applications</h2>

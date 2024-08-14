@@ -1,8 +1,8 @@
 import React from 'react';
 
-const StatusFilter = ({ status, setStatus }) => {
+function StatusFilter({ status, setStatus }) {
   return (
-    <div>
+    <div className='filter'>
       <label htmlFor="status-filter">Filter by Status: </label>
       <select
         id="status-filter"

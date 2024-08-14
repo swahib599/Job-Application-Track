@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import NavBar from './Components/NavBar';
 import Header from './Components/Header';
 import ApplicationList from './Components/ApplicationList';
 import ApplicationForm from './Components/ApplicationForm';
@@ -59,7 +58,6 @@ const App = () => {
 
   return (
     <div>
-      <NavBar />
       <Header />
       <StatusFilter status={status} setStatus={setStatus} />
       <ApplicationForm onApplicationAdded={addApplication} />

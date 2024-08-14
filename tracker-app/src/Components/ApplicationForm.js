@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ApplicationForm = ({ onApplicationAdded }) => {
+function ApplicationForm ({ onApplicationAdded }) {
   const [formData, setFormData] = useState({
     companyName: '',
     position: '',
@@ -34,38 +34,52 @@ const ApplicationForm = ({ onApplicationAdded }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    
+    <form onSubmit={handleSubmit} className='form'>
+      <h2>Job applied</h2>
+      <label htmlFor="companyName">Company Name:</label>
       <input
         type="text"
+        id='companyName'
         name="companyName"
         placeholder="Company Name"
         value={formData.companyName}
         onChange={handleChange}
+        className='form-input'
       />
+      <label htmlFor="position">Position:</label>
       <input
         type="text"
+        id="position"
         name="position"
         placeholder="Position"
         value={formData.position}
         onChange={handleChange}
+        className='form-input'
       />
+      <label htmlFor="dateApplied">Date Applied:</label>
       <input
         type="date"
+        id="dateApplied"
         name="dateApplied"
         value={formData.dateApplied}
         onChange={handleChange}
+        className='form-input'
       />
+      <label htmlFor="status">Status:</label>
       <select
         name="status"
+        id="status"
         value={formData.status}
         onChange={handleChange}
+        className='form-select'
       >
         <option value="Applied">Applied</option>
         <option value="Interview Scheduled">Interview Scheduled</option>
         <option value="Offered">Offered</option>
         <option value="Rejected">Rejected</option>
       </select>
-      <button type="submit">Add Application</button>
+      <button type="submit" className='form-button'>Add Application</button>
     </form>
   );
 };

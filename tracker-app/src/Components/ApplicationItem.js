@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const ApplicationItem = ({ application, onDelete, onEdit }) => {
+function ApplicationItem ({ application, onDelete, onEdit }) {
   const [isEditing, setIsEditing] = useState(false);
   const [formData, setFormData] = useState({ ...application });
 
@@ -18,7 +18,7 @@ const ApplicationItem = ({ application, onDelete, onEdit }) => {
 
   if (isEditing) {
     return (
-      <div className="flex-item"> {/* Ensure flex-item class is applied */}
+      <div className="flex-item"> 
         <input
           type="text"
           name="companyName"
@@ -54,12 +54,12 @@ const ApplicationItem = ({ application, onDelete, onEdit }) => {
   }
 
   return (
-    <div className="flex-item"> {/* Ensure flex-item class is applied */}
+    <div className="flex-item">
       <h3>{application.position} at {application.companyName}</h3>
       <p>Date Applied: {application.dateApplied}</p>
       <p>Status: {application.status}</p>
-      <button onClick={() => setIsEditing(true)}>Edit</button>
-      <button onClick={() => onDelete(application.id)}>Delete</button>
+      <button onClick={() => setIsEditing(true)} className='edit-button'>Edit</button>
+      <button onClick={() => onDelete(application.id)} className='delete-btn'>Delete</button>
     </div>
   );
 };
