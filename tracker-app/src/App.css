@@ -1,4 +1,4 @@
-/* Global Styles */
+
 body {
   margin: 0;
   padding: 0;
@@ -7,44 +7,44 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #f4f4f4; /* Light background for better contrast */
-  color: #333; /* Dark text color for readability */
-  box-sizing: border-box; /* Ensure padding and borders are included in the element's width and height */
+  background-color: #f4f4f4; 
+  color: #333; 
+  box-sizing: border-box; 
 }
 
-/* Code Block Styling */
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
-  background-color: #f0f0f0; /* Light grey background for code blocks */
-  padding: 4px 8px; /* Padding for better readability */
-  border-radius: 4px; /* Rounded corners for a softer look */
-  color: #d63384; /* Highlighted text color */
+  background-color: #f0f0f0; 
+  padding: 4px 8px; 
+  border-radius: 4px; 
+  color: #d63384; 
 }
 
-/* Layout Container */
+
 .container {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
 }
 
-/* Header Styling */
+
 header {
-  background-color: #deefe2; /* Primary color background */
-  color: #fff; /* White text color */
-  padding: 20px; /* Padding inside header */
-  text-align: center; /* Center align the header text */
+  background-color: #deefe2; 
+  color: #fff; 
+  padding: 20px; 
+  text-align: center; 
 }
 
 header h2 {
-  margin: 0; /* Remove default margin */
-  font-size: 28px; /* Larger font size for header */
+  margin: 0; 
+  font-size: 28px; 
 }
 
-/* Navigation Bar */
+
 nav {
-  background-color: #828582; /* Slightly darker color for navigation */
+  background-color: #828582; 
   padding: 16px;
 }
 
@@ -54,7 +54,7 @@ nav ul {
   list-style-type: none;
   padding: 0;
   margin: 0;
-  gap: 16px; /* Space between navigation items */
+  gap: 16px; 
 }
 
 nav ul li {
@@ -68,60 +68,60 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #90812b; /* Gold color on hover */
+  color: #90812b; 
 }
 
-/* Flexbox Container for Lists */
+
 .flex-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 16px; /* Space between items */
-  padding: 16px; /* Padding around the container */
+  gap: 16px; 
+  padding: 16px; 
 }
 
-/* Flexbox Items with Transparent Background */
+
 .flex-item {
-  background-color: rgba(235, 229, 229, 0.8); /* White background with transparency */
-  padding: 16px; /* Padding inside each item */
-  border-radius: 8px; /* Rounded corners */
-  border: 1px solid rgba(0, 0, 0, 0.1); /* Light border for better definition */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-  flex: 1 1 200px; /* Flex-grow, flex-shrink, and min-width */
-  max-width: 300px; /* Max-width to prevent items from getting too large */
-  text-align: center; /* Center text inside each item */
-  transition: transform 0.3s ease; /* Smooth transformation for hover effect */
+  background-color: rgba(235, 229, 229, 0.8); 
+  padding: 16px; 
+  border-radius: 8px; 
+  border: 1px solid rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex: 1 1 200px; 
+  max-width: 300px; 
+  text-align: center; 
+  transition: transform 0.3s ease; 
 }
 
 .flex-item:hover {
-  transform: translateY(-5px); /* Slight lift on hover */
+  transform: translateY(-5px); 
 }
 
-/* Responsive Typography */
+
 h1, h2, h3, h4, h5, h6 {
-  color: #333; /* Consistent text color */
-  margin-top: 0; /* Remove default margin from top */
-  margin-bottom: 16px; /* Consistent spacing after headings */
+  color: #333;
+  margin-top: 0; 
+  margin-bottom: 16px; 
 }
 
 p {
-  line-height: 1.6; /* Improved readability with line height */
-  margin-bottom: 16px; /* Consistent spacing after paragraphs */
+  line-height: 1.6; 
+  margin-bottom: 16px; 
 }
 
-/* Responsive Media Queries */
+
 @media (max-width: 768px) {
   .flex-container {
-    padding: 8px; /* Reduce padding on smaller screens */
+    padding: 8px; 
   }
 
   .flex-item {
-    flex: 1 1 100%; /* Stack items vertically on small screens */
-    max-width: 100%; /* Ensure full-width items */
+    flex: 1 1 100%; 
+    max-width: 100%; 
   }
 
   nav ul {
-    flex-direction: column; /* Stack nav items vertically */
-    gap: 8px; /* Reduce gap between nav items */
+    flex-direction: column;
+    gap: 8px; 
   }
 }
