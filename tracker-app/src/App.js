@@ -4,7 +4,6 @@ import Header from './Components/Header';
 import ApplicationList from './Components/ApplicationList';
 import ApplicationForm from './Components/ApplicationForm';
 import StatusFilter from './Components/StatusFilter';
-import './App.css'
 
 const App = () => {
   const [applications, setApplications] = useState([]);
