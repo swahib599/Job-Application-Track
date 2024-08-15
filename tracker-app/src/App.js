@@ -65,8 +65,8 @@ const App = () => {
   return (
     <div>
       <Header />
-      <StatusFilter status={status} setStatus={setStatus} />
       <ApplicationForm onApplicationAdded={addApplication} />
+      <StatusFilter status={status} setStatus={setStatus} />
       <ApplicationList
         applications={filteredApplications}
         onDelete={deleteApplication}

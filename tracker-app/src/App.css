@@ -10,7 +10,7 @@ body {
   background-color: #f4f4f4; 
   color: #333; 
   box-sizing: border-box; 
-  background-image: url('https://img.freepik.com/free-photo/online-school-equipment-home_23-2149041150.jpg?ga=GA1.1.736327954.1723654538&semt=ais_hybrid');
+ 
 }
 
 
@@ -91,14 +91,15 @@ nav ul li a.active {
   display: flex;
   align-items: center;
   margin: 20px 0;
-  /* color: fff; */
+  justify-content: center;
+  
 }
 
 .filter label {
   margin-right: 10px;
   font-weight: bold;
-  /* color: #333; */
   color: burlywood;
+  font-size: 18px;
 }
 
 .filter select {
@@ -125,6 +126,11 @@ nav ul li a.active {
 
 .form {
   padding: 1em;
+  background-image: url('https://img.freepik.com/free-photo/online-school-equipment-home_23-2149041150.jpg?ga=GA1.1.736327954.1723654538&semt=ais_hybrid');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  /* background-size: contain; */
+
 }
 .form label {
 color: burlywood;
@@ -184,6 +190,9 @@ color: burlywood;
   justify-content: center;
   gap: 16px; 
   padding: 16px; 
+  background-image: url('https://img.freepik.com/free-photo/online-school-equipment-home_23-2149041150.jpg?ga=GA1.1.736327954.1723654538&semt=ais_hybrid');
+  background-repeat: no-repeat;
+  background-size: 100%;
 }
 
 /* Application Items */
