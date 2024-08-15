@@ -41,12 +41,37 @@
       "jobUrl": "https://www.crossover.com/job-roles/software-engineering/kenya/city/nairobi/c-a0q2j000007SQpFAAW/learnwithai-full-stack-developer"
     },
     {
+      "id": "6",
+      "companyName": "Synnefa Green Limited",
+      "position": "Junior Software Developer",
+      "dateApplied": "2024-07-27",
+      "status": "Applied",
+      "jobUrl": "https://jobs.eagmark.net/job/junior-software-developer/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+    },
+    {
       "id": "370b",
       "companyName": "My Health Africa",
       "position": "Senior UI/UX Designer",
       "dateApplied": "2024-02-22",
       "status": "Interview Scheduled",
       "jobUrl": "https://freshjobs.co.ke/job/senior-ui-ux-designer-at-myhealth-africa-nairobi/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
+    },
+    {
+      "id": "7",
+      "companyName": "Turing",
+      "position": "Software Developer",
+      "dateApplied": "2024-05-27",
+      "status": "Applied",
+      "jobUrl": "https://www.turing.com/jobs/software-developer-jobs-in-kenya"
+    },
+    {
+      "id": "8",
+      "companyName": "Incepto",
+      "position": "Software Developer-PHP",
+      "dateApplied": "2024-05-29",
+      "status": "Rejected",
+      "jobUrl":"https://inceptor.co.ke/jobs/software-development-job/?utm_campaign=google_jobs_apply&utm_source=google_jobs_apply&utm_medium=organic"
     }
+    
   ]
 }

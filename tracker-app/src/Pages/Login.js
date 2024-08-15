@@ -25,7 +25,7 @@ function Login({ onLogin }) {
 
   return (
     <div className="signin-container">
-      <h2>Sign In</h2>
+      <h1>Sign In</h1>
       <form onSubmit={handleSignIn} className="signin-form">
         <input
           type="email"

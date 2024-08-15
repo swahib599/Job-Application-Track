@@ -9,7 +9,8 @@ body {
   -moz-osx-font-smoothing: grayscale;
   background-color: #f4f4f4; 
   color: #333; 
-  box-sizing: border-box; 
+  box-sizing: border-box;
+  
  
 }
 
@@ -32,15 +33,22 @@ code {
 
 
 header {
-  background-color: #deefe2; 
-  color: black; 
+  color: white; 
   padding: 20px; 
   text-align: center; 
+  background-image: url('https://img.freepik.com/free-vector/vector-abstract-wave-background-colorful-lines-waves-background_1142-9399.jpg?t=st=1723756264~exp=1723759864~hmac=5199bd52427a72173b3f64a13a139cf9ad5e66b7419fed93db4ddfd4f4a0dfd6&w=1380');
+  height: 90vh; 
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex; 
+  justify-content: center; 
+  align-items: center; 
 }
 
 header h2 {
   margin: 0; 
-  font-size: 28px; 
+  font-size: 50px; 
+  padding-top: 4rem;
 }
 
 
@@ -98,7 +106,7 @@ nav ul li a.active {
 .filter label {
   margin-right: 10px;
   font-weight: bold;
-  color: burlywood;
+  color: black;
   font-size: 18px;
 }
 
@@ -126,17 +134,17 @@ nav ul li a.active {
 
 .form {
   padding: 1em;
-  background-image: url('https://img.freepik.com/free-photo/online-school-equipment-home_23-2149041150.jpg?ga=GA1.1.736327954.1723654538&semt=ais_hybrid');
   background-repeat: no-repeat;
   background-size: 100%;
-  /* background-size: contain; */
+  background-color:lightblue;
 
 }
 .form label {
-color: burlywood;
+color: black;
+font-size: 14px;
 }
 .form h2 {
-  color: burlywood;
+  color:black;
 }
 .form-input {
   padding: 10px;
@@ -166,6 +174,7 @@ color: burlywood;
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
 }
 
 .form-button:hover {
@@ -176,11 +185,8 @@ color: burlywood;
 
 /* About */
 .about {
-  max-width: 800px;
   padding: 20px;
-  background-color: #f9f9f9;
-  border-radius: 8px;
-  line-height: 1.6;
+  font-size: 15px;
 }
 
 /* Application Lists */
@@ -190,16 +196,17 @@ color: burlywood;
   justify-content: center;
   gap: 16px; 
   padding: 16px; 
-  background-image: url('https://img.freepik.com/free-photo/online-school-equipment-home_23-2149041150.jpg?ga=GA1.1.736327954.1723654538&semt=ais_hybrid');
+  background-image: url('https://png.pngtree.com/thumb_back/fh260/background/20230415/pngtree-website-technology-ray-blue-background-image_2344464.jpg');
   background-repeat: no-repeat;
   background-size: 100%;
 }
 
 /* Application Items */
 .flex-item {
-  background-color: rgba(235, 229, 229, 0.8); 
-  /* background-color: antiquewhite; */
+  background-color: rgba(235, 229, 229, 0.8);
   padding: 16px; 
+  color: black;
+  font-size: 14px;
   border-radius: 8px; 
   border: 1px solid rgba(0, 0, 0, 0.1); 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -236,7 +243,8 @@ p {
 
 @media (max-width: 768px) {
   .flex-container {
-    padding: 8px; 
+    padding: 8px;
+    background-size: cover;
   }
 
   .flex-item {
@@ -260,6 +268,7 @@ p {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 .signin-form {
@@ -267,15 +276,34 @@ p {
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  display: flex;
+  flex-direction: column;
 }
 
 .signin-input {
   margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 16px;
 }
 
 .signin-button {
-  margin-top: 10px;
+
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
 }
+
+.signin-button:hover {
+  background-color: #45a049;
+}
+
 .application-details a {
   color: #007BFF;
   text-decoration: none;
