@@ -6,7 +6,7 @@ function ApplicationForm({ onApplicationAdded }) {
     position: '',
     dateApplied: '',
     status: 'Applied',
-    jobUrl: '', // Add jobUrl to the form data
+    jobUrl: '', 
   });
 
   const handleChange = (e) => {
