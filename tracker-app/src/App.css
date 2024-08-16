@@ -36,7 +36,7 @@ header {
   color: white; 
   padding: 20px; 
   text-align: center; 
-  background-image: url('https://img.freepik.com/free-vector/vector-abstract-wave-background-colorful-lines-waves-background_1142-9399.jpg?t=st=1723756264~exp=1723759864~hmac=5199bd52427a72173b3f64a13a139cf9ad5e66b7419fed93db4ddfd4f4a0dfd6&w=1380');
+  background-image: url('https://img.freepik.com/premium-vector/stylized-colorful-wave-line-element-design_213860-722.jpg?w=996');
   height: 90vh; 
   background-repeat: no-repeat;
   background-size: cover;
@@ -136,7 +136,7 @@ nav ul li a.active {
   padding: 1em;
   background-repeat: no-repeat;
   background-size: 100%;
-  background-color:lightblue;
+  background-color:rgb(173, 219, 230);
 
 }
 .form label {
