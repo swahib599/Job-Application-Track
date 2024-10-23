@@ -11,7 +11,7 @@ const App = () => {
 
   // Fetch applications on component mount
   useEffect(() => {
-    fetch('http://localhost:8001/applications')
+    fetch('https://job-application-track-backend.vercel.app/applications')
       .then(response => response.json())
       .then(data => {
         const sortedApplications = data.sort((a, b) => new Date(b.dateApplied) - new Date(a.dateApplied));
@@ -29,7 +29,7 @@ const App = () => {
 
   // Update an existing application
   const updateApplication = (id, updatedApplication) => {
-    fetch(`http://localhost:8001/applications/${id}`, {
+    fetch(`https://job-application-track-backend.vercel.app/applications/${id}`, {
       method: 'PUT',
       headers: {
         'Content-Type': 'application/json',
@@ -48,7 +48,7 @@ const App = () => {
 
   // Delete an application
   const deleteApplication = (id) => {
-    fetch(`http://localhost:8001/applications/${id}`, {
+    fetch(`https://job-application-track-backend.vercel.app/applications/${id}`, {
       method: 'DELETE',
     })
       .then(() => {
